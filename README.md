@@ -1,1 +1,1 @@
-# Mobile-theatre-
+This is a placeholder for README.md in MobileTheatre Final Full Project.

@@ -1,0 +1,1 @@
+This is a placeholder for script.js in MobileTheatre Final Full Project.
