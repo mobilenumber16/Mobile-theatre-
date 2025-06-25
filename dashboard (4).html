@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard - MobileTheatre</title>
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      color: #ff4081;
+    }
+    .panel {
+      background-color: #111;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    button {
+      background-color: #ff4081;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e91e63;
+    }
+  </style>
+</head>
+<body>
+  <h1>Admin Dashboard</h1>
+
+  <div class="panel">
+    <h2>Verify Movie Distributor</h2>
+    <p>Simulated AI check: Passed ✅</p>
+    <button onclick="alert('Distributor Verified')">Approve</button>
+  </div>
+
+  <div class="panel">
+    <h2>Uploaded Movies</h2>
+    <ul>
+      <li>Movie 1 - Waiting for approval <button onclick="alert('Movie Approved')">Approve</button></li>
+      <li>Movie 2 - Approved ✅</li>
+    </ul>
+  </div>
+
+  <div class="panel">
+    <h2>Actions</h2>
+    <button onclick="alert('Logged out'); window.location.href='index.html';">Logout</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movie Player - MobileTheatre</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #121212;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    h1 {
+      margin: 20px 0;
+      font-size: 2rem;
+    }
+    video {
+      width: 100%;
+      max-width: 720px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    .price {
+      color: #ff4081;
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+    .watch-now {
+      padding: 12px 25px;
+      background: #ff4081;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+    .watch-now:hover {
+      background: #e91e63;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎬 Action Hero 2025</h1>
+  <video controls>
+    <source src="sample.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="price">₹199</div>
+  <a href="#" class="watch-now">Watch Now</a>
+</body>
+</html>

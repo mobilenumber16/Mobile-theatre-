@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Player - MobileTheatre</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    h1 {
+      color: #ff4081;
+      margin-bottom: 20px;
+    }
+    video {
+      width: 90%;
+      max-width: 900px;
+      border: 5px solid #ff4081;
+      border-radius: 10px;
+    }
+    .note {
+      margin-top: 15px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <h1>Now Playing: Sample Movie</h1>
+  <video controls>
+    <source src="sample-movie.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <div class="note">AI Protected Playback | Screenshots & Recording Blocked | MobileTheatre.com</div>
+</body>
+</html>

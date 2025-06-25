@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Movie Upload - MobileTheatre.in</title>
+  <style>
+    body {
+      background: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      color: #ff4081;
+      margin-bottom: 30px;
+    }
+    form {
+      background: #111;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ff4081;
+      width: 100%;
+      max-width: 600px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #ff4081;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    input[type="submit"] {
+      background-color: #ff4081;
+      color: white;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #e91e63;
+    }
+    .note {
+      font-size: 0.9rem;
+      color: #ccc;
+      margin-top: -15px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>AI Movie Upload Verification</h1>
+  <form action="#" method="post" enctype="multipart/form-data">
+    <label for="companyName">Production/Distribution Company Name</label>
+    <input type="text" id="companyName" name="companyName" required />
+
+    <label for="ownerID">Owner ID / License Document</label>
+    <input type="file" id="ownerID" name="ownerID" accept=".pdf,.jpg,.png" required />
+    <div class="note">AI will verify your company and ownership documents</div>
+
+    <label for="movieFile">Upload Movie File</label>
+    <input type="file" id="movieFile" name="movieFile" accept="video/*" required />
+    <div class="note">Max Duration: 5 Hours | Format: MP4, MKV, MOV</div>
+
+    <label for="releaseDate">Movie Release Date</label>
+    <input type="date" id="releaseDate" name="releaseDate" required />
+
+    <label for="language">Movie Language</label>
+    <input type="text" id="language" name="language" placeholder="e.g., Hindi, English, Tamil" required />
+
+    <label for="description">Short Description</label>
+    <textarea id="description" name="description" rows="4" placeholder="About the movie..."></textarea>
+
+    <input type="submit" value="Submit for AI Verification & Upload" />
+  </form>
+</body>
+</html>
